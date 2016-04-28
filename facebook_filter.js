@@ -8,7 +8,7 @@
                 for (var ii = 0, nn = nodes.length; ii < nn; ii++)
                 {
                     var text = nodes[ii] ? nodes[ii].textContent.toLowerCase() : '';
-                    if (text && text.indexOf('donald') >= 0 && text.indexOf('trump') >= 0 && nodes[ii].style.display != 'none')
+                    if (text && text.indexOf('since') >= 0 && text.indexOf('year') >= 0 && nodes[ii].style.display != 'none')
                     {
                         nodes[ii].style.display = 'none';
                         chrome.runtime.sendMessage({action: "removeTrump"});
